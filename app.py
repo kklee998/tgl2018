@@ -21,6 +21,8 @@ def anomaly222(bot,update):
 def anomaly880(bot,update):
 	bot.send_photo(chat_id=update.message.chat_id, photo=open('Card880.PNG','rb'))	
 
+def anomaly555(bot,update):
+	bot.send_photo(chat_id=update.message.chat_id, photo=open('Card555.PNG','rb'))
 
 
 start_handler = CommandHandler('start',start)
@@ -34,5 +36,8 @@ dispatcher.add_handler(anomaly222_handler)
 
 anomaly880_handler = CommandHandler('880',anomaly880)
 dispatcher.add_handler(anomaly880_handler)
+
+anomaly555_handler = CommandHandler('555',anomaly555)
+dispatcher.add_handler(anomaly555_handler)
 
 updater.start_polling()
